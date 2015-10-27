@@ -68,7 +68,7 @@ cat $infile | %{
             $currcol = $maskedName
         }
         elseif ($colnum -eq $spmail){
-            # e.g. ahkow42@ichat.sp.edu.sg becomes P5678@ichat.sp.edu.sg
+            # e.g. ahkow42@ichat.... becomes P5678@ichat.....
             $emailSuffix = $currcol.split('@')[1]
             $currcol = $currUsrId + '@' + $emailSuffix
         }
